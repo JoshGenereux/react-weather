@@ -1,12 +1,15 @@
 import './App.css';
+import Search from "./Search";
+import Header from "./Header";
+import {useState} from "react";
 
 function App() {
-
-  fetch('')
+const [search, setSearch] = useState(true)
 
   return (
     <div className="App">
-      {'helllo'}
+      <Header />
+      { search && <Search search={search} setSearch={setSearch}/>}
     </div>
   );
 }
