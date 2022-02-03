@@ -8,11 +8,11 @@ body {
     background-image: linear-gradient(to right bottom, #051937, #004d75, #008690, #00be7b, #b9eb4b);
     height: 100vh;
     width: 100vh;
+
 }
 
 .header{
     width: 100%;
-    height: 150px;
     position: fixed;
     top: 50px;
     background:none;
@@ -28,21 +28,24 @@ body {
 
 .search-container{
     position: fixed;
-    top: 50%;
+    top: 275px;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
     width: 350px;
-    height: 200px;
-    background-color: black;
+    height: 100px;
+    background: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 20px;
+    border: white 5px solid
+
 }
 
 .search-form {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -52,16 +55,39 @@ body {
 
 .search-input, .search-btn{
     width: 40%;
-    height: 20%;
+    height: 50%;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    border-radius: 10px;
+    border: white solid 2px;
+    background: none;
+    font-size: 20px;
+}
+.search-input {
+    background-color: white;
+}
+.search-btn:hover {
+    cursor: pointer;
+    color: white;
 }
 
 .card {
-    width: 200px;
-    height: 200px;
-    background-color: gray;
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translate( -50%);
+    width: 600px;
+    height: 500px;
+    background: #4B79A1;
+    background: -webkit-linear-gradient(to bottom, #0d151a, #62a7de);
+    background: linear-gradient(to bottom, #111920, #4B79A1);
+    border-radius: 20px;
+    border: white solid 5px;
 }
 
-.card-h1{
-    font-size: 50px;
-    color: white;
+.card-location-sect{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
