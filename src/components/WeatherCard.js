@@ -16,9 +16,10 @@ const WeatherCard = ({weather})=>{
           <h2 className='icon-text'>{weather.condition.text}</h2>
         </div>
         <div className='info-div'>
-          <h1 className='info'>{weather.temp}</h1>
-          <h1 className='info'>{weather.feelsLike}</h1>
-          <h1 className='info'>{weather.wind}</h1>
+          <h1 className='info'>Precip: {weather.precip} in</h1>
+          <h1 className='info'>Feels like: {weather.feelsLike}f</h1>
+          <h1 className='info'>Wind: {weather.wind} mph</h1>
+          <h1 className='info-temp'>{weather.temp} f</h1>
         </div>
       </section>
 

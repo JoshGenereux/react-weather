@@ -23,14 +23,15 @@ const HomePage = ()=>{
             icon: res.data.current.condition.icon,
             text: res.data.current.condition.text
           },
+          precip: res.data.current.precip_in,
           temp: res.data.current.temp_f,
           wind: res.data.current.wind_mph,
           feelsLike: res.data.current.feelslike_f
         })
       })
       .catch(err => console.log(err))
-
     setCard(true)
+    console.log(weather)
   }
 
   const handleChange = (e)=>{
