@@ -2,6 +2,7 @@ import './App.css';
 import Search from "./Search";
 import Header from "./Header";
 import {useState} from "react";
+import WeatherCard from "./WeatherCard";
 
 function App() {
 const [search, setSearch] = useState(true)
@@ -9,7 +10,8 @@ const [search, setSearch] = useState(true)
   return (
     <div className="App">
       <Header />
-      { search && <Search search={search} setSearch={setSearch}/>}
+      { search && <Search setSearch={setSearch}/>}
+      {/*{ !search && <WeatherCard />}*/}
     </div>
   );
 }
