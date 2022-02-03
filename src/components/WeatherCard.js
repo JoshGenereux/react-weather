@@ -1,7 +1,6 @@
 import React from "react";
 
 const WeatherCard = ({weather})=>{
-  console.log(weather)
 
   return (
     <div className='card'>

@@ -5,7 +5,7 @@ import axios from "axios";
 const HomePage = ()=>{
   const [card, setCard] = useState(false)
   const [input, setInput] = useState('')
-  const [weather, setWeather] = useState({})
+  const [weather, setWeather] = useState(null)
 
   const key = process.env.REACT_APP_API_KEY
 
@@ -28,10 +28,9 @@ const HomePage = ()=>{
           wind: res.data.current.wind_mph,
           feelsLike: res.data.current.feelslike_f
         })
+        setCard(true)
       })
       .catch(err => console.log(err))
-    setCard(true)
-    console.log(weather)
   }
 
   const handleChange = (e)=>{
